@@ -39,11 +39,11 @@ In third terminal, run the test client using
 
 In fourth terminal, use the CLI to start/stop individual servers per [Running the demo](https://github.com/redhat-italy/hacep/tree/master/hacep-examples/hacep-eap-playground#running-the-demo)
 
-To stop server 3, use
+For example, to stop server 3 use
 
     ./jboss-eap-7.0/jboss-cli.sh --connect --command="/host=master/server-config=hacep-3:stop"
 
-To start server 3, use
+And to restart server 3, use
 
     ./jboss-eap-7.0/jboss-cli.sh --connect --command="/host=master/server-config=hacep-3:start"
 

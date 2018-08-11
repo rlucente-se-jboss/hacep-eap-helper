@@ -3,11 +3,11 @@ This project provides some scripts to simplify standing up the
 [Highly Available Complex Event Processing](https://github.com/redhat-italy/hacep)
 (HACEP) EAP playground application from Red Hat Italy.
 
-Open four command line terminals
-
-Clone this repository
+Open four command line terminals.  Clone this repository
 
      git clone https://github.com/rlucente-se-jboss/hacep-eap-helper.git
+
+Within the remaining terminals, change to the directory where you cloned this repository.
 
 Place all prescribed files in `dist` per the `readme.txt` file there.
 Make sure that `demo.conf` is correct and matches file versions in `dist`.

@@ -18,13 +18,13 @@ Install the demo
 
 In first terminal, start AMQ
 
-    ./jboss-a-mq-6.2.1.redhat-084/bin/amq
+    ./start-amq.sh
 
 Wait for AMQ to fully start
 
 In second terminal, start EAP servers (there should be four)
 
-    ./jboss-eap-7.0/bin/domain.sh
+    ./start-eap.sh
 
 Wait until all four servers are running
 

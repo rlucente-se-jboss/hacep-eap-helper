@@ -38,9 +38,9 @@ In fourth terminal, use the CLI to start/stop individual servers per [Running th
 
 For example, to stop server 3 use
 
-    ./jboss-eap-7.0/jboss-cli.sh --connect --command="/host=master/server-config=hacep-3:stop"
+    ./control-server.sh stop 3
 
 And to restart server 3, use
 
-    ./jboss-eap-7.0/jboss-cli.sh --connect --command="/host=master/server-config=hacep-3:start"
+    ./control-server.sh start 3
 

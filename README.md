@@ -4,12 +4,14 @@ This project provides some scripts to simplify standing up the
 (HACEP) EAP playground application from Red Hat Italy.
 
 Open four command line terminals
+
 Clone this repository
 
      git clone https://github.com/rlucente-se-jboss/hacep-eap-helper.git
 
 Place all prescribed files in `dist` per the `readme.txt` file there.
-Make sure that demo.conf is correct and matches file versions in `dist`.
+Make sure that `demo.conf` is correct and matches file versions in `dist`.
+
 Install the demo
 
      ./install.sh
@@ -28,10 +30,10 @@ Wait until all four servers are running
 
 The HACEP EAP Playground UI is available at
 
-http://localhost:8180/hacep-playground
-http://localhost:8280/hacep-playground
-http://localhost:8380/hacep-playground
-http://localhost:8480/hacep-playground
+* http://localhost:8180/hacep-playground
+* http://localhost:8280/hacep-playground
+* http://localhost:8380/hacep-playground
+* http://localhost:8480/hacep-playground
 
 In third terminal, run the test client using
 

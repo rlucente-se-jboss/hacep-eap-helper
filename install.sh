@@ -66,10 +66,14 @@ embed-host-controller
 
 /server-group=hacep:add(socket-binding-group=full-sockets, profile=hacep-full)
 
-/host=master/server-config=hacep-1:add(group=hacep,socket-binding-port-offset=400,auto-start=false)
-/host=master/server-config=hacep-2:add(group=hacep,socket-binding-port-offset=500,auto-start=false)
-/host=master/server-config=hacep-3:add(group=hacep,socket-binding-port-offset=600,auto-start=false)
-/host=master/server-config=hacep-4:add(group=hacep,socket-binding-port-offset=700,auto-start=false)
+/host=master/server-config=hacep-1:add(group=hacep,socket-binding-port-offset=400,auto-start=true)
+/host=master/server-config=hacep-2:add(group=hacep,socket-binding-port-offset=500,auto-start=true)
+/host=master/server-config=hacep-3:add(group=hacep,socket-binding-port-offset=600,auto-start=true)
+/host=master/server-config=hacep-4:add(group=hacep,socket-binding-port-offset=700,auto-start=true)
+
+/host=master/server-config=server-one:remove
+/host=master/server-config=server-two:remove
+/host=master/server-config=server-three:remove
 
 deploy ${WORKDIR}/activemq-rar-${VER_AMQ_RAR}.rar --name=activemq-rar.rar --server-groups=hacep
 

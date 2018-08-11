@@ -30,10 +30,10 @@ Wait until all four servers are running
 
 The HACEP EAP Playground UI is available at
 
-* http://localhost:8180/hacep-playground
-* http://localhost:8280/hacep-playground
-* http://localhost:8380/hacep-playground
 * http://localhost:8480/hacep-playground
+* http://localhost:8580/hacep-playground
+* http://localhost:8680/hacep-playground
+* http://localhost:8780/hacep-playground
 
 In third terminal, run the test client using
 

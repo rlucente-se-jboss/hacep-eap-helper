@@ -31,12 +31,11 @@ In the first terminal, start the AMQ message broker:
 Wait for the AMQ console prompt to appear so that AMQ is fully
 started.
 
-In the second terminal, start the EAP servers (there should be
-four):
+In the second terminal, start the EAP servers:
 
     ./start-eap.sh
 
-Wait until all four servers are running.  You can check this using:
+Wait until all the servers are running.  You can check this using:
 
     ./check-eap-status.sh
 

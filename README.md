@@ -35,11 +35,12 @@ In the second terminal, start the EAP servers:
 
     ./start-eap.sh
 
-Wait until all the servers are running.  You can check this using:
+Wait until all the servers are running.  You can check this in a
+different terminal using:
 
     ./check-eap-status.sh
 
-and make sure that all four servers are started.
+to make sure that all four servers are started.
 
 ## Demo
 Open a browser to the HACEP EAP Playground UI at

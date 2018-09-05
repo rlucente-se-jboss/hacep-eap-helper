@@ -61,3 +61,6 @@ And to restart server 3:
 
     ./control-server.sh start 3
 
+Be aware that server 1 is hosting the web application at port 8480,
+so stopping server 1 will prevent the web page from refreshing.
+

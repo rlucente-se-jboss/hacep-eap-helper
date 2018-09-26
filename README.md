@@ -35,11 +35,12 @@ In the second terminal, start the EAP servers:
 
     ./start-eap.sh
 
-Wait until all the servers are running.  You can check this using:
+Wait until all the servers are running.  You can check this in a
+different terminal using:
 
     ./check-eap-status.sh
 
-and make sure that all four servers are started.
+to make sure that all four servers are started.
 
 ## Demo
 Open a browser to the HACEP EAP Playground UI at
@@ -59,4 +60,7 @@ For example, to stop server 3:
 And to restart server 3:
 
     ./control-server.sh start 3
+
+Be aware that server 1 is hosting the web application at port 8480,
+so stopping server 1 will prevent the web page from refreshing.
 

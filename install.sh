@@ -68,8 +68,6 @@ embed-host-controller
 
 /host=master/server-config=hacep-1:add(group=hacep,socket-binding-port-offset=400,auto-start=true)
 /host=master/server-config=hacep-2:add(group=hacep,socket-binding-port-offset=500,auto-start=true)
-/host=master/server-config=hacep-3:add(group=hacep,socket-binding-port-offset=600,auto-start=true)
-/host=master/server-config=hacep-4:add(group=hacep,socket-binding-port-offset=700,auto-start=true)
 
 /host=master/server-config=server-one:remove
 /host=master/server-config=server-two:remove

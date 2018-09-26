@@ -44,7 +44,7 @@ PUSHD $WORKDIR
     ISOK
 
     echo -n "Clone the hacep source ..... "
-    git clone https://github.com/redhat-italy/hacep.git &> /dev/null
+    git clone https://github.com/rlucente-se-jboss/hacep.git -b dco-hacep &> /dev/null
     ISOK
 
     PUSHD hacep

@@ -84,6 +84,10 @@ deploy ${WORKDIR}/activemq-rar-${VER_AMQ_RAR}.rar --name=activemq-rar.rar --serv
 /profile=hacep-full/subsystem=resource-adapters/resource-adapter=activemq-rar.rar/config-properties=Password:add(value="admin")
 /profile=hacep-full/subsystem=resource-adapters/resource-adapter=activemq-rar.rar/config-properties=ServerUrl:add(value="tcp://localhost:61616?jms.rmIdFromConnectionId=true")
 /profile=hacep-full/subsystem=resource-adapters/resource-adapter=activemq-rar.rar/connection-definitions=ConnectionFactory:add(class-name="org.apache.activemq.ra.ActiveMQManagedConnectionFactory", jndi-name="java:/HACEPConnectionFactory", enabled=true, min-pool-size=1, max-pool-size=20, pool-prefill=false, same-rm-override=false, recovery-username="admin", recovery-password="admin", recovery-plugin-class-name="org.jboss.jca.core.recovery.ConfigurableRecoveryPlugin", recovery-plugin-properties={"EnableIsValid" => "false","IsValidOverride" => "true"})
+/profile=hacep-full/subsystem=logging/logger=org.drools:add
+/profile=hacep-full/subsystem=logging/logger=org.drools:write-attribute(name="level", value="DEBUG")
+/profile=hacep-full/subsystem=logging/logger=it.redhat.hacep.playground.rules.reward.catalog:add
+/profile=hacep-full/subsystem=logging/logger=it.redhat.hacep.playground.rules.reward.catalog:write-attribute(name="level", value="DEBUG")
 
 deploy $WORKDIR/hacep-eap-playground-1.0-SNAPSHOT.war --server-groups=hacep
 
